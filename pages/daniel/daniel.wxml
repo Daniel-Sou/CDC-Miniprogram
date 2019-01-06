@@ -1,0 +1,25 @@
+<view class='container1'>
+<text>This is about my webpage about my DEMO.</text>
+<text>My name is Daniel.</text>
+<checkbox-group>
+  <checkbox>Year 1</checkbox>
+  <checkbox>Year 2</checkbox>
+  <checkbox>Year 3</checkbox>
+</checkbox-group>
+
+<!--Swiper element-->
+<swiper style='background: #eee; height: 260px;'>
+  <swiper-item>
+    <text>123</text>
+    <image src='/images/titanic.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <text>456</text>
+    <image src='/images/leon.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <text>789</text>
+    <image src='/images/jf.jpg'></image>
+  </swiper-item>
+</swiper>
+</view>

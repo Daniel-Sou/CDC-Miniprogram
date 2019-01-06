@@ -1,0 +1,13 @@
+<!--pages/about/about.wxml-->
+
+
+<view class='container'>
+  <image class='about-banner' src='/images/simba.jpg'></image>
+  <text style='font-weight: bold; font-size: 60rpx;'>電影周周看</text>
+  <view>
+  <!-- open-type can change to 'swithTab' because it will not conflict with tabBar -->  
+    <text>我</text><navigator style='display: inline; ' url='/pages/weekly/weekly' open-type='switchTab' hover-class='nav-hover' class='nav-default'>每周推薦</navigator><text>一部好片</text>
+  </view>
+  <text>This is my weibo</text>
+  <text>This is my wechat</text>
+</view>

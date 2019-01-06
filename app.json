@@ -1,0 +1,40 @@
+{
+  "pages": 
+  [
+    "pages/about/about",
+    "pages/daniel/daniel",
+    "pages/weekly/weekly"
+  ],
+
+  "tabBar": {
+    "list": [
+    {
+      "text": "每周推薦",
+      "pagePath": "pages/weekly/weekly",
+      "iconPath": "images/icons/weekly.png",
+      "selectedIconPath": "images/icons/weekly-selected.png"
+    },
+    {
+      "text": "關於",
+      "pagePath": "pages/about/about",
+      "iconPath": "images/icons/about.png",
+      "selectedIconPath": "images/icons/about-selected.png"
+    },
+    {
+      "text": "個人",
+      "pagePath": "pages/daniel/daniel",
+      "iconPath": "images/icons/daniel.png",
+      "selectedIconPath": "images/icons/daniel-selected.png"
+    }
+    ],
+    "color": "#000",
+    "selectedColor": "#000f"
+    },
+
+    "window": {
+      "navigationBarBackgroundColor": "#fff",
+      "navigationBarTextStyle": "black",
+      "enablePullDownRefresh": true,
+      "navigationBarTitleText": "DEMO"
+    }
+}

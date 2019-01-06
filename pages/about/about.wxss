@@ -1,0 +1,15 @@
+/*小程序規定所有設備寬高均為 750rpx*/
+/*基本以iphone6 為主，Iphone6屏幕 px:rpx=1:2*/
+.about-banner {
+  width: 375rpx;
+  height: 375rpx;
+  border-radius: 60%;
+}
+
+.nav-default {
+  color: blue;
+}
+
+.nav-hover {
+  color: red;
+}

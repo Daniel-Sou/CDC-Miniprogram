@@ -1,0 +1,38 @@
+<view style='container'>
+  <text>本周推薦</text>
+  <swiper class='movie-swiper' indicator-dots='{{true}}' previous-margin='50rpx' next-margin='50rpx' current='{{currentIndex}}'>
+  <swiper-item class='movie' wx:for='{{weeklyMovieList}}'>
+    <view class='container movie-card'>
+    <image class='movie-image' src='{{item.imagePath}}'></image>
+        <text>Week {{index + 1}}: {{item.name}}</text>
+        <text>點評：{{item.comment}}</text>
+        <text>Score: {{item.score + item.count}}</text>
+        <text>Grade: {{ (item.score >= 60)? "Pass":"Fail" }}</text>
+        <text wx:if='{{item.isHighlyRecommended}}' style='font-size: 32rpx; color: red;'>Highly Recommended</text>
+        <text hidden='{{!item.isSecret}}' style='color: blue;'>Has Secret</text>
+        
+        <text bindtap='f0' wx:if='{{index < (weeklyMovieList.length - 1)}}' class='return-button'>To This Week</text>
+    </view>
+  </swiper-item>
+  </swiper>
+
+<view class='other-button'>
+  <text>Like: {{like}}</text>
+  <text>Star: {{star}}</text>
+  <button bindtap='f1'> Like +1 </button>
+  <button catchtap='f2'> Star +1 </button>
+</view>
+</view>
+
+<!-- Data binding in WXML
+Data binding
+{{ data }}
+
+Conditional wx:if
+- 可見性頻䌓切換的時候，
+不建議使用條件渲染 wx:if，
+- 使用 hidden，但一開始會加載這個元素
+
+Repeat wx:for
+
+-->
